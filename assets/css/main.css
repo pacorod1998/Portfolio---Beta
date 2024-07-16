@@ -2063,7 +2063,6 @@ input, select, textarea {
 
 .image.thumb {
     text-align: center;
-    max-width: 100%; /* Ensure images do not exceed container width */
 }
 
 .image.thumb:after {
@@ -2118,7 +2117,8 @@ input, select, textarea {
     max-width: 40%; /* Adjust width for larger screens */
 }
 
-.image.left img, .image.right img {
+.image.left img,
+.image.right img {
     width: 100%; /* Ensure images take full width on smaller screens */
     height: auto; /* Maintain aspect ratio */
 }
@@ -2147,12 +2147,12 @@ input, select, textarea {
 @media screen and (max-width: 480px) {
     .image.left,
     .image.right {
-        max-width: 100%; /* Adjust width for smaller screens */
+        max-width: 80%; /* Adjust width for smaller screens */
     }
 
     .image.left img,
     .image.right img {
-        width: 100%; /* Ensure images take full width on smaller screens */
+        width: 80%; /* Ensure images take full width on smaller screens */
     }
 }
 
