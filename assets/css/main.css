@@ -2137,7 +2137,6 @@ input, select, textarea {
 .image.avatar {
     border-radius: 100%;
     overflow: hidden; /* Ensure image is clipped to the rounded shape */
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1); /* Adjust box-shadow size and color */
 }
 
 .image.avatar img {
