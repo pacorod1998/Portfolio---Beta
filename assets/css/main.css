@@ -2136,23 +2136,26 @@ input, select, textarea {
 
 .image.avatar {
     border-radius: 100%;
+    overflow: hidden; /* Ensure image is clipped to the rounded shape */
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1); /* Adjust box-shadow size and color */
 }
 
 .image.avatar img {
-    border-radius: 100%;
-    width: 100%; /* Ensure images take full width on smaller screens */
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* Media query for screens up to 480px wide (adjust as needed) */
 @media screen and (max-width: 480px) {
     .image.left,
     .image.right {
-        max-width: 80%; /* Adjust width for smaller screens */
+        max-width: 50%; /* Adjust width for smaller screens */
     }
 
     .image.left img,
     .image.right img {
-        width: 80%; /* Ensure images take full width on smaller screens */
+        width: 50%; /* Ensure images take full width on smaller screens */
     }
 }
 
