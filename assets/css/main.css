@@ -2150,7 +2150,7 @@ input, select, textarea {
     .image.right img,
     .image.fit img,
     .image.avatar img {
-        max-width: 80%; /* Adjust image width for smaller screens */
+        max-width: 100%; /* Adjust image width for smaller screens */
     }
 }
 
