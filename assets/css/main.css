@@ -2108,14 +2108,14 @@ input, select, textarea {
     float: left;
     margin: 0 1.5em 1em 0;
     top: 0.25em;
-    max-width: 100%; /* Adjust width for smaller screens */
+    max-width: 40%; /* Adjust width for larger screens */
 }
 
 .image.right {
     float: right;
     margin: 0 0 1em 1.5em;
     top: 0.25em;
-    max-width: 100%; /* Adjust width for smaller screens */
+    max-width: 40%; /* Adjust width for larger screens */
 }
 
 .image.left img, .image.right img {
@@ -2145,15 +2145,16 @@ input, select, textarea {
 
 /* Media query for screens up to 480px wide (adjust as needed) */
 @media screen and (max-width: 480px) {
-    .image.thumb img,
+    .image.left,
+    .image.right {
+        max-width: 100%; /* Adjust width for smaller screens */
+    }
+
     .image.left img,
-    .image.right img,
-    .image.fit img,
-    .image.avatar img {
-        max-width: 100%; /* Adjust image width for smaller screens */
+    .image.right img {
+        width: 100%; /* Ensure images take full width on smaller screens */
     }
 }
-
 
 /* List */
 
